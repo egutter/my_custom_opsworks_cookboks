@@ -1,6 +1,6 @@
 cron "job_name" do
-  #hour "1"
+  hour "*"
   minute "10"
-  #weekday "6"
+  weekday "*"
   command "cd $HOME && date >> mylog.txt"
 end
