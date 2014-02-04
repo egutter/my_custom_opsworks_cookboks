@@ -1,8 +1,8 @@
 tasks = [
-	{name: 'clean:unconfirmed_documents', hour: '6', minute: '0'},
-	{name: 'reminders:send_document_deadlines', hour: '6', minute: '30'},
-	{name: 'reminders:send_discovery_end_date', hour: '7', minute: '0'},
-	{name: 'reminders:scheduled_events', hour: '7', minute: '30'},
+	{:name => 'clean:unconfirmed_documents', :hour => '6', :minute => '0'},
+	{:name => 'reminders:send_document_deadlines', :hour => '6', :minute => '30'},
+	{:name => 'reminders:send_discovery_end_date', :hour => '7', :minute => '0'},
+	{:name => 'reminders:scheduled_events', :hour => '7', :minute => '30'},
 ]
 
 tasks.each do |a_task|
