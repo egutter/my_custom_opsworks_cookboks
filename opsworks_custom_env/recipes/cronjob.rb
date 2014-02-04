@@ -10,6 +10,6 @@ tasks.each do |a_task|
 	  hour a_task[:hour]
 	  minute a_task[:minute]
 	  weekday "*"
-	  command "cd #{deploy[:deploy_to]}/current && bundle exec rake #{a_task[:name]}"
+	  command "cd /srv/www/lawvault/current && bundle exec rake #{a_task[:name]} RAILS_ENV=performance"
 	end
 end
